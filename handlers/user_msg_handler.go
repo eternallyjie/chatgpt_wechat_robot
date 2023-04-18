@@ -151,7 +151,7 @@ func buildUserReply(reply string) string {
 	}
 	reply = strings.TrimSpace(reply)
 	if reply == "" {
-		return deadlineExceededText
+		return deadlineEmptyText
 	}
 
 	// 2.如果用户有配置前缀，加上前缀

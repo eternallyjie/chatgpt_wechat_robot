@@ -178,7 +178,7 @@ func (g *GroupMessageHandler) buildReplyText(reply string) string {
 	}
 	reply = strings.TrimSpace(reply)
 	if reply == "" {
-		return atText + " " + deadlineExceededText
+		return atText + " " + deadlineEmptyText
 	}
 
 	// 2.拼接回复, @我的用户, 问题, 回复

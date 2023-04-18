@@ -14,6 +14,7 @@ import (
 )
 
 const deadlineExceededText = "请求GPT服务器超时[裂开]得不到回复，请重新发送问题[旺柴]"
+const deadlineEmptyText = "抱歉！请重新发送问题[裂开][旺柴]"
 
 var c = cache.New(config.LoadConfig().SessionTimeout, time.Minute*5)
 
