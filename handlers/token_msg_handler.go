@@ -65,7 +65,7 @@ func (t *TokenMessageHandler) handle() error {
 
 // ReplyText 回复清空口令
 func (t *TokenMessageHandler) ReplyText() error {
-	maxInt := rand.New(rand.NewSource(time.Now().UnixNano())).Intn(5)
+	maxInt := rand.New(rand.NewSource(time.Now().UnixNano())).Intn(2)
 	time.Sleep(time.Duration(maxInt+1) * time.Second)
 
 	t.service.ClearUserSessionContext()
