@@ -85,7 +85,7 @@ func (g *GroupMessageHandler) ReplyText() error {
 		return nil
 	}
 
-	maxInt := rand.New(rand.NewSource(time.Now().UnixNano())).Intn(5)
+	maxInt := rand.New(rand.NewSource(time.Now().UnixNano())).Intn(2)
 	time.Sleep(time.Duration(maxInt+1) * time.Second)
 
 	log.Printf("Received Group[%v], Content[%v], CreateTime[%v]", g.group.NickName, g.msg.Content,
